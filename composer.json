@@ -9,7 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
-        "filament/filament": "^2.10",
+
+        "filament/filament": "fix-replicate as 2.x-dev",
+        "filament/forms": "fix-replicate as 2.x-dev",
+        "filament/support": "fix-replicate as 2.x-dev",
+        "filament/tables": "fix-replicate as 2.x-dev",
+
         "filament/spatie-laravel-media-library-plugin": "^2.10",
         "filament/spatie-laravel-settings-plugin": "^2.10",
         "filament/spatie-laravel-tags-plugin": "^2.10",
@@ -73,6 +78,12 @@
             "composer/package-versions-deprecated": true
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "filament/packages/*"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

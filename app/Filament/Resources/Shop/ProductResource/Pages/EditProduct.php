@@ -14,6 +14,7 @@ class EditProduct extends EditRecord
     {
         return [
             Actions\ReplicateAction::make()
+                ->excludeAttributes(['slug', 'barcode', 'sku'])
                 ->requiresConfirmation(),
             Actions\DeleteAction::make(),
         ];
